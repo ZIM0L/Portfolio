@@ -3,11 +3,76 @@ body{
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
-    background-color: #2D292B;
+    background-color: var(--bg-color);
+    color: var(--main-font-color);
+    font-family: 'Inter', sans-serif;
 }
 
 /* VARIABLE */
-
+:root{
+    --main-font-color: white;
+    --second-font-color: #34D9EB;
+    --bg-color: #323031;
+    --light-blue: #34D9EB;
+    --darker-blue: #177E89;
+    --darkest-blue: #084C61;
+}
 /* TAGS */
+.circle {
+    height: 4.2rem;
+    width: 4.2rem;
+    background-color: var(--light-blue);
+    opacity: 0.3;
+    border-radius: 50%;
+    position: absolute;
+    right: 2em;
+    top: 25%;
+  }
+  .triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+	border-bottom: 4em solid var(--darkest-blue);
+    position: absolute;
+    right: 1em;
+    top: 28%;
+    opacity: 0.9;
+}
 
+#HEAD > #Head-Intro > h1 {
+    font-weight: 800;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    color:var(--second-font-color);
+}
+#Head-Last-Span{
+    color: var(--second-font-color);
+    font-weight: 900;
+}
 
+@media screen and (min-width: 360px){
+    #HEAD > div > h1 {
+       font-size: 70px; 
+    }
+    #HEAD > #Head-Intro,p {
+       width: 75%;
+       margin-left:1em; 
+    }
+    #HEAD > p{
+       font-size: 25px;
+       margin-left: 0.5em;
+    }
+    .Links-svg-conn {
+        width: 5em;
+        text-align: center;
+        display:block;
+    }
+    #Head-Links {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+   
+}
