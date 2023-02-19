@@ -73,7 +73,10 @@ hr{
     color: var(--second-font-color);
     font-weight: 900;
 }
-
+.Links-svg-conn:hover {
+    cursor: pointer;
+}
+    /* PHONE */
 @media screen and (min-width: 360px){
     #HEAD > div > h1 {
        font-size: 70px; 

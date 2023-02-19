@@ -2,12 +2,12 @@ const SvgLinks = document.querySelectorAll(".Links-svg-conn")
 // add transition
 var i=0;
 SvgLinks.forEach(element => {
-    element.firstElementChild.addEventListener("onload", (e) => {
+    element.firstElementChild.addEventListener("mouseover", (e) => {
        // console.log(element.firstElementChild);
        element.firstElementChild.setAttribute("transform","scale(1.3)")
        element.firstElementChild.setAttribute("fill","#34D9EB")
        element.lastElementChild.setAttribute("transform","scale(1.2)")
-
+       
 
     });
     element.firstElementChild.addEventListener("mouseout", (e) => {
